@@ -99,7 +99,7 @@ set mouse-=a             " 鼠标暂不启用, 键盘党....
 
 
 " 修复ctrl+m 多光标操作选择的bug，但是改变了ctrl+v进行字符选中时将包含光标下的字符
-"set selection=exclusive
+" set selection=exclusive
 set selection=inclusive
 set selectmode=mouse,key
 
@@ -127,7 +127,7 @@ set whichwrap+=<,>,h,l
 "
 "显示当前的行号列号：
 set ruler
-""在状态栏显示正在输入的命令
+" 在状态栏显示正在输入的命令
 set showcmd
 " 左下角显示当前vim模式
 set showmode
@@ -234,8 +234,8 @@ set encoding=utf-8
 " 自动判断编码时，依次尝试以下编码：
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 set helplang=cn
-"set langmenu=zh_CN.UTF-8
-"set enc=2byte-gb18030
+" set langmenu=zh_CN.UTF-8
+" set enc=2byte-gb18030
 " 下面这句只影响普通模式 (非图形界面) 下的 Vim。
 set termencoding=utf-8
 
@@ -255,7 +255,7 @@ autocmd! bufwritepost _vimrc source % " vimrc文件修改之后自动加载。 w
 autocmd! bufwritepost .vimrc source % " vimrc文件修改之后自动加载。 linux。
 
 " 自动补全配置
-"让Vim的补全菜单行为与一般IDE一致(参考VimTip1228)
+" 让Vim的补全菜单行为与一般IDE一致(参考VimTip1228)
 set completeopt=longest,menu
 
 " 增强模式中的命令行自动完成操作
@@ -263,12 +263,12 @@ set wildmenu
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc,*.class
 
-"离开插入模式后自动关闭预览窗口
+" 离开插入模式后自动关闭预览窗口
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-"回车即选中当前项
+" 回车即选中当前项
 inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
 
-"上下左右键的行为 会显示其他信息
+" 上下左右键的行为 会显示其他信息
 inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
 inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
 inoremap <expr> <PageDown> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDown>"
@@ -286,17 +286,17 @@ endif
 " 主要按键重定义
 
 " 关闭方向键, 强迫自己用 hjkl
-map <Left> <Nop>
-map <Right> <Nop>
-map <Up> <Nop>
-map <Down> <Nop>
+" map <Left> <Nop>
+" map <Right> <Nop>
+" map <Up> <Nop>
+" map <Down> <Nop>
 
-"Treat long lines as break lines (useful when moving around in them)
-"se swap之后，同物理行上线直接跳
-nnoremap k gk
-nnoremap gk k
-nnoremap j gj
-nnoremap gj j
+" Treat long lines as break lines (useful when moving around in them)
+" se swap之后，同物理行上线直接跳
+" nnoremap k gk
+" nnoremap gk k
+" nnoremap j gj
+" nnoremap gj j
 
 " F1 - F6 设置
 " F1 废弃这个键,防止调出系统帮助
@@ -309,7 +309,7 @@ nnoremap gj j
 " I can type :help on my own, thanks.  Protect your fat fingers from the evils of <F1>
 noremap <F1> <Esc>"
 
-""为方便复制，用<F2>开启/关闭行号显示:
+" 为方便复制，用<F2>开启/关闭行号显示:
 function! HideNumber()
   if(&relativenumber == &number)
     set relativenumber! number!
@@ -345,7 +345,7 @@ noremap H ^
 noremap L $
 
 
-"Map ; to : and save a million keystrokes
+" Map ; to : and save a million keystrokes
 " ex mode commands made easy 用于快速进入命令行
 nnoremap ; :
 
@@ -384,7 +384,7 @@ noremap <silent><leader>/ :nohls<CR>
 
 " --------tab/buffer相关
 
-"Use arrow key to change buffer"
+" Use arrow key to change buffer"
 " TODO: 如何跳转到确定的buffer?
 " :b1 :b2   :bf :bl
 nnoremap [b :bprevious<cr>
@@ -397,7 +397,7 @@ noremap <right> :bn<CR>
 " TODO: ctrl + n 变成切换tab的方法
 " http://vim.wikia.com/wiki/Alternative_tab_navigation
 " http://stackoverflow.com/questions/2005214/switching-to-a-particular-tab-in-vim
-"map <C-2> 2gt
+" map <C-2> 2gt
 map <leader>th :tabfirst<cr>
 map <leader>tl :tablast<cr>
 
@@ -469,7 +469,7 @@ nnoremap <leader>v V`}
 cmap w!! w !sudo tee >/dev/null %
 
 " kj 替换 Esc
-inoremap kj <Esc>
+"inoremap kj <Esc>
 
 " 滚动Speed up scrolling of the viewport slightly
 nnoremap <C-e> 2<C-e>
@@ -603,7 +603,7 @@ endif
 " theme主题
 set background=dark
 set t_Co=256
-colorscheme solarized
+colorscheme molokai
 " colorscheme Tomorrow-Night
 " colorscheme Tomorrow-Night-Bright
 " colorscheme desert
@@ -624,3 +624,8 @@ highlight clear SpellRare
 highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
+
+" For MySelf
+" Ctrl C 
+vmap <c-c> "+y
+
