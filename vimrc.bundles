@@ -561,7 +561,7 @@ let g:html_indent_style1 = "inc"
 
 " for javascript 自动补全,配合YCM,需要安装nodejs&npm  see
 " https://github.com/marijnh/tern_for_vim
-Bundle 'marijnh/tern_for_vim'
+" Bundle 'marijnh/tern_for_vim'
 
 " for jquery
 Bundle 'nono/jquery.vim'
@@ -601,3 +601,25 @@ autocmd FileType python nnoremap <leader>y :0,$!yapf<Cr>
 " I do not want to change much for default registers, just default behavior
 " Bundle 'svermeulen/vim-easyclip'
 "------------------------------------------- end of configs --------------------------------------------
+
+" ###### wakatime #######
+Bundle 'wakatime/vim-wakatime'
+
+" ####### vim indent #######
+" Bundle 'nathanaelkane/vim-indent-guides'
+" let g:indent_guides_enable_on_vim_startup = 1
+" let g:indent_guides_auto_colors = 0
+" let g:indent_guides_start_level = 2
+" let g:indent_guides_guide_size = 1
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=8
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=black
+" highlight tabs and trailing spaces set list
+" set listchars=tab:——;
+
+" ####### indent 插入缩进 2 ########
+Bundle 'Yggdroot/indentLine'
+let g:indentLine_color_tty_dark = 8
+let g:indentLine_char = ':'
+set list lcs=tab:\|\ 
+" let g:indentLine_leadingSpaceEnabled = 1
+" let g:indentLine_leadingSpaceChar = '·'
