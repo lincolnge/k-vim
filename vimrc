@@ -626,6 +626,7 @@ highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
 
 " For MySelf
-" Ctrl C 
+" Ctrl C
 vmap <c-c> "+y
 
+set colorcolumn=100
