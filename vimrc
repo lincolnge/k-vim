@@ -601,8 +601,9 @@ else
 endif
 
 " theme主题
-set background=dark
-set t_Co=256
+" set background=dark
+" set t_Co=256
+set t_Co=88
 colorscheme molokai
 " colorscheme Tomorrow-Night
 " colorscheme Tomorrow-Night-Bright
