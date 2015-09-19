@@ -544,10 +544,10 @@ let g:vim_markdown_folding_disabled=1
 
 " https://github.com/suan/vim-instant-markdown
 " npm -g install instant-markdown-d
-" Bundle 'suan/vim-instant-markdown'
-" let g:instant_markdown_slow = 1
-" let g:instant_markdown_autostart = 0
-" map <F12> :InstantMarkdownPreview<CR>
+Bundle 'suan/vim-instant-markdown'
+let g:instant_markdown_slow = 1
+let g:instant_markdown_autostart = 0
+map <F12> :InstantMarkdownPreview<CR>
 
 " ###### HTML/JS/JQUERY/CSS #########
 
@@ -616,10 +616,10 @@ Bundle 'wakatime/vim-wakatime'
 " highlight tabs and trailing spaces set list
 " set listchars=tab:——;
 
-" ####### indent 插入缩进 2 ########
+" ####### indent 插入缩进效果 2 ########
 Bundle 'Yggdroot/indentLine'
 let g:indentLine_color_tty_dark = 8
-let g:indentLine_char = ':'
+let g:indentLine_char = '|'
 set list lcs=tab:\|\ 
-" let g:indentLine_leadingSpaceEnabled = 1
-" let g:indentLine_leadingSpaceChar = '·'
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '·'

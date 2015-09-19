@@ -629,4 +629,8 @@ highlight SpellLocal term=underline cterm=underline
 " Ctrl C
 vmap <c-c> "+y
 
+" 字符串超过 100 个字节提示
 set colorcolumn=100
+
+" tab 效果
+set listchars=tab:»—,eol:$,nbsp:·,trail:·,precedes:<,extends:>
