@@ -635,3 +635,6 @@ set colorcolumn=100
 
 " tab 效果
 set listchars=tab:»—,eol:$,nbsp:·,trail:·,precedes:<,extends:>
+
+" Y-N-C prompt if closing with unsaved changes.
+set confirm
