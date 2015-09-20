@@ -320,8 +320,15 @@ function! HideNumber()
   endif
   set number?
 endfunc
+
+" 与 Yggdroot/indentLine 协作，用<F3>开启/关闭:
+function! HideListAndIndentLines()
+  set list! list?
+  IndentLinesToggle
+endfunc
+
 nnoremap <F2> :call HideNumber()<CR>
-nnoremap <F3> :set list! list?<CR>
+nnoremap <F3> :call HideListAndIndentLines()<CR>
 nnoremap <F4> :set wrap! wrap?<CR>
               "set paste
 set pastetoggle=<F5>            "    when in insert mode, press <F5> to go to
@@ -602,8 +609,8 @@ endif
 
 " theme主题
 " set background=dark
-" set t_Co=256
-set t_Co=88
+set t_Co=256
+" set t_Co=88
 colorscheme molokai
 " colorscheme Tomorrow-Night
 " colorscheme Tomorrow-Night-Bright
