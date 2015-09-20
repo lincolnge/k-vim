@@ -155,10 +155,10 @@ let g:UltiSnipsJumpBackwordTrigger = "<c-k>"
 
 
 " 自动补全单引号，双引号等
-Bundle 'Raimondi/delimitMate'
+" Bundle 'Raimondi/delimitMate'
 
 "" for python docstring ",优化输入
-au FileType python let b:delimitMate_nesting_quotes = ['"']
+" au FileType python let b:delimitMate_nesting_quotes = ['"']
 " 关闭某些类型文件的自动补全
 "au FileType mail let b:delimitMate_autoclose = 0
 
@@ -308,8 +308,8 @@ let g:ctrlsf_mapping = {
 
 " git.  git操作还是习惯命令行,vim里面处理简单diff编辑操作
 " :Gdiff  :Gstatus :Gvsplit
-Bundle 'tpope/vim-fugitive'
-nnoremap <leader>ge :Gdiff<CR>
+" Bundle 'tpope/vim-fugitive'
+" nnoremap <leader>ge :Gdiff<CR>
 " not ready to open
 " <leader>gb maps to :Gblame<CR>
 " <leader>gs maps to :Gstatus<CR>
@@ -382,10 +382,10 @@ au Syntax * RainbowParenthesesLoadBraces
 " ################### 显示增强-主题 ###################"
 
 " 主题 solarized
-Bundle 'altercation/vim-colors-solarized'
-let g:solarized_termtrans=1
-let g:solarized_contrast="normal"
-let g:solarized_visibility="normal"
+" Bundle 'altercation/vim-colors-solarized'
+" let g:solarized_termtrans=1
+" let g:solarized_contrast="normal"
+" let g:solarized_visibility="normal"
 " let g:solarized_termcolors=256
 
 " 主题 molokai
@@ -394,7 +394,7 @@ Bundle 'tomasr/molokai'
 let g:molokai_original = 1
 
 " 主题 tomorrow
-Bundle 'chriskempson/vim-tomorrow-theme'
+" Bundle 'chriskempson/vim-tomorrow-theme'
 
 
 " ################### 快速导航 ###################
@@ -516,8 +516,8 @@ map <F10> :QuickRun<CR>
 " ###### Python #########
 
 " python fly check, 弥补syntastic只能打开和保存才检查语法的不足
-Bundle 'kevinw/pyflakes-vim'
-let g:pyflakes_use_quickfix = 0
+" Bundle 'kevinw/pyflakes-vim'
+" let g:pyflakes_use_quickfix = 0
 
 " for python.vim syntax highlight
 Bundle 'hdima/python-syntax'
@@ -589,7 +589,7 @@ Bundle 'ap/vim-css-color'
 
 " ####### temp #######
 " python code format
-autocmd FileType python nnoremap <leader>y :0,$!yapf<Cr>
+" autocmd FileType python nnoremap <leader>y :0,$!yapf<Cr>
 " Bundle 'mindriot101/vim-yapf'
 " scriptencoding utf-8
 " let g:yapf_style = "google"
@@ -603,6 +603,7 @@ autocmd FileType python nnoremap <leader>y :0,$!yapf<Cr>
 "------------------------------------------- end of configs --------------------------------------------
 
 " ###### wakatime #######
+" 记录 VIM 在各个项目里面的时间
 Bundle 'wakatime/vim-wakatime'
 
 " ####### vim indent #######
