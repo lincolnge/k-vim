@@ -615,7 +615,7 @@ colorscheme molokai
 " colorscheme Tomorrow-Night
 " colorscheme Tomorrow-Night-Bright
 " colorscheme desert
-
+" colorscheme gruvbox
 
 
 " 设置标记一列的背景颜色和数字一行颜色一致
