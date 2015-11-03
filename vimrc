@@ -645,3 +645,12 @@ set listchars=tab:»—,eol:$,nbsp:·,trail:·,precedes:<,extends:>
 
 " Y-N-C prompt if closing with unsaved changes.
 set confirm
+
+
+" 使用鼠标滚动 VIM
+" Enable mouse use in all modes
+set mouse=a
+
+" Set this to the name of your terminal that supports mouse codes.
+" Must be one of: xterm, xterm2, netterm, dec, jsbterm, pterm
+set ttymouse=xterm2

@@ -411,6 +411,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " s/v 分屏打开文件
 let g:NERDTreeMapOpenSplit = 's'
 let g:NERDTreeMapOpenVSplit = 'v'
+let NERDTreeShowBookmarks = 1
+" autocmd VimEnter * NERDTree
 
 
 Bundle 'jistr/vim-nerdtree-tabs'
@@ -647,4 +649,12 @@ let g:indentLine_color_tty_dark = 8
 let g:indentLine_char = '|'
 set list lcs=tab:\|\
 " let g:indentLine_leadingSpaceEnabled = 1 " 性能问题禁用
-" let g:indentLine_leadingSpaceChar = '·'
+" let g:indentLine_leadingSpaceChar = '·
+let g:indentLine_enabled = 0 " 默认关闭
+
+" ###### vim react #######
+" Bundle 'mxw/vim-jsx'
+" let g:jsx_ext_required = 0
+" let g:jsx_pragma_required = 1
+
+
