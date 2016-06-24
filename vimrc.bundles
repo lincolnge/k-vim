@@ -630,7 +630,7 @@ Bundle 'ap/vim-css-color'
 
 " ###### wakatime #######
 " 记录 VIM 在各个项目里面的时间
-Bundle 'wakatime/vim-wakatime'
+" Bundle 'wakatime/vim-wakatime'
 
 " ####### vim indent #######
 " Bundle 'nathanaelkane/vim-indent-guides'

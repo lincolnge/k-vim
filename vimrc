@@ -634,7 +634,7 @@ highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
 
 " For MySelf
-" Ctrl C
+" Ctrl C 复制效果，copy
 vmap <c-c> "+y
 
 " 字符串超过 100 个字节提示
