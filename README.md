@@ -39,7 +39,6 @@ molokai主题
 ![molokai](https://github.com/wklken/gallery/blob/master/vim/molokai.png?raw=true)
 
 ---------------------------------
-
 ---------------------------------
 
 # 安装步骤
@@ -65,7 +64,7 @@ sudo apt-get install silversearcher-ag
 # centos
 sudo yum install python-devel.x86_64
 sudo yum groupinstall 'Development Tools'
-sudo rpm -Uvh http://download.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+sudo rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 sudo yum install the_silver_searcher
 sudo yum install cmake
 
@@ -114,6 +113,15 @@ sh -x install.sh
 
 ------------------------
 ------------------------
+
+# 移除安装
+
+```
+cd ~ && rm -rf .vim .vimrc .vimrc.bundles && cd -
+```
+
+---------------------------------
+---------------------------------
 
 # 常见问题
 
@@ -318,7 +326,7 @@ thx a lot. 可以给我提pull request:)
 
 2. install.sh 参考`spf13-vim` 的`bootstrap.sh` [spf13-vim](https://github.com/spf13/spf13-vim)
 
-2. 插件管理使用[Vundle](https://github.com/gmarik/Vundle.vim)
+2. 插件管理使用[Vim-plug](https://github.com/junegunn/vim-plug)
 
 3. 自动补全 [YCM](https://github.com/Valloric/YouCompleteMe)
 
@@ -334,11 +342,6 @@ thx a lot. 可以给我提pull request:)
 
 
 ![donation](https://raw.githubusercontent.com/wklken/gallery/master/donation/donation_w.jpg)
-
-
-支付宝
-
-![donation](https://raw.githubusercontent.com/wklken/gallery/master/donation/donation.png)
 
 ------------------------
 ------------------------
